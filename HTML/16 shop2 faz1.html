@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه | خانه</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">فروشگاه آنلاین</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >خانه
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">تماس با ما</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="filter">
+            <h3 class="my-4">فیلتر محصولات</h3>
+            <div class="priceFilter">
+              <label for="priceRange"><h5>قیمت</h5></label>
+              <input
+                type="range"
+                class="custom-range"
+                min="0"
+                max="5"
+                step="0.5"
+                id="priceRange"
+              />
+            </div>
+            <div class="brandFilter">
+              <h5 class="mb-3">برند</h5>
+              <div class="my-1 d-flex align-items-center">
+                <input type="checkbox" value="" id="appleBrand" class="ml-2" />
+                <label for="appleBrand" class="my-0"> اپل </label>
+              </div>
+
+              <div class="my-1 d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  value=""
+                  id="microsoftBrand"
+                  class="ml-2"
+                />
+                <label for="microsoftBrand" class="my-0"> مایکروسافت </label>
+              </div>
+
+              <div class="my-1 d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  value=""
+                  id="samsungBrand"
+                  class="ml-2"
+                />
+                <label for="samsungBrand" class="my-0"> سامسونگ </label>
+              </div>
+
+              <div class="my-1 d-flex align-items-center">
+                <input type="checkbox" value="" id="sonyBrand" class="ml-2" />
+                <label for="sonyBrand" class="my-0"> سونی </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="row" id="product-list">
+            <div class="product col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <img src="./images/macbook.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h4 class="card-title">لپ تاپ 16 اینچی اپل</h4>
+                  <h5>62.559.000 تومان</h5>
+                  <p class="card-text">0000fffff</p>
+                  <div class="card-footer">
+                    <button class="btn btn-light">افزودن به سید خرید</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
